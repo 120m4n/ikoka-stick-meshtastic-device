@@ -1,0 +1,84 @@
+(footprint "Booster_XL3608_24.4x13.7mm_Solder"
+  (version 20241229)
+  (generator "kicad-mcp")
+  (generator_version "9.0")
+  (layer "F.Cu")
+  (descr "XL3608 5V boost module, solder pads. ASSUMED dims 24.4x13.7mm, pads 1.5mm from corners, 10% margin on courtyard. Top view: left VOUT(top)/GND, right VIN(top)/GND. Replace with caliper-measured values.")
+  (tags "boost module XL3608 solder pads")
+
+  (property "Reference" "REF**" (at 0 -9 0)
+    (layer "F.SilkS")
+    (uuid "fb863f81-d722-455b-8734-4c752f737d00")
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (property "Value" "Booster_XL3608_24.4x13.7mm_Solder" (at 0 9 0)
+    (layer "F.Fab")
+    (uuid "f075d90c-e507-4634-a4a8-8b6572dff26c")
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (property "Datasheet" "" (at 0 0 0)
+    (layer "F.Fab")
+    (uuid "6c0427f9-2194-48cf-abd9-5243b2805315")
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+
+  (fp_rect
+    (start -13.8 -7.9)
+    (end 13.8 7.9)
+    (stroke (width 0.05) (type default))
+    (fill none)
+    (layer "F.CrtYd")
+    (uuid "5bf372ae-7a66-4b3e-b4b2-953ad32d80ab")
+  )
+
+  (fp_rect
+    (start -13.42 -7.535)
+    (end 13.42 7.535)
+    (stroke (width 0.15) (type default))
+    (fill none)
+    (layer "F.SilkS")
+    (uuid "a348d664-1024-4c51-8cdf-d2a076b006cd")
+  )
+
+  (fp_rect
+    (start -12.2 -6.85)
+    (end 12.2 6.85)
+    (stroke (width 0.1) (type default))
+    (fill none)
+    (layer "F.Fab")
+    (uuid "8d613d23-2ff6-47bf-b1d5-86158abc05de")
+  )
+
+  (pad "1" thru_hole oval
+    (at 10.7 -5.35)
+    (size 3.2 2)
+    (drill 1)
+    (layers "*.Cu" "*.Mask")
+    (uuid "570c5747-f6d1-4be8-a5c2-f88fce42a327")
+  )
+
+  (pad "2" thru_hole oval
+    (at 10.7 5.35)
+    (size 3.2 2)
+    (drill 1)
+    (layers "*.Cu" "*.Mask")
+    (uuid "c0968271-385e-4495-9adc-88f54f85f423")
+  )
+
+  (pad "3" thru_hole oval
+    (at -10.7 5.35)
+    (size 3.2 2)
+    (drill 1)
+    (layers "*.Cu" "*.Mask")
+    (uuid "2e5fc3cc-1cb1-4370-a408-06d16214e8a8")
+  )
+
+  (pad "4" thru_hole oval
+    (at -10.7 -5.35)
+    (size 3.2 2)
+    (drill 1)
+    (layers "*.Cu" "*.Mask")
+    (uuid "47b4b13e-c7ee-4370-9c20-b7a4eff460b2")
+  )
+
+)
