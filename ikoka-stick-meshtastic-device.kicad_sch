@@ -5940,6 +5940,16 @@
 		(uuid "441930a7-ff50-40f0-a2a8-4693e353fc9c")
 	)
 	(label "BOOST_IN"
+		(at 40.64 35.56 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4bdc9326-38a2-46f5-ba01-2989039da6cb")
+	)
+	(label "BOOST_IN"
 		(at 17.78 25.4 0)
 		(effects
 			(font
@@ -5948,6 +5958,16 @@
 			(justify left bottom)
 		)
 		(uuid "51905cda-1845-4006-a048-4b8d988dee71")
+	)
+	(label "GND"
+		(at 40.64 38.1 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "53529bd8-01e1-4cff-99cf-13765a57b43b")
 	)
 	(label "LORA_RXEN"
 		(at 172.72 54.61 0)
@@ -5989,6 +6009,16 @@
 		)
 		(uuid "6859024f-2767-4c24-9fd1-83881445dbfb")
 	)
+	(label "+5V2_LORA"
+		(at 40.64 43.18 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6ebb6151-84cf-4482-8a40-68c574ef3ea0")
+	)
 	(label "LORA_RXEN"
 		(at 53.34 170.18 0)
 		(effects
@@ -5998,6 +6028,16 @@
 			(justify left bottom)
 		)
 		(uuid "7181aff1-c926-4414-a519-29c55add5107")
+	)
+	(label "GND"
+		(at 40.64 40.64 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "7fe76f43-a9ee-486c-94f0-c34eea124557")
 	)
 	(label "D0"
 		(at 53.34 157.48 0)
@@ -7366,8 +7406,8 @@
 		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board no)
-		(in_pos_files no)
+		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "41e7c4cc-c1aa-4a37-8014-b90fb791e438")
 		(property "Reference" "J3"
@@ -9425,8 +9465,8 @@
 		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board no)
-		(in_pos_files no)
+		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "aefae214-c6e2-441e-bb2a-669d1744475e")
@@ -9512,6 +9552,91 @@
 			(project "ikoka-stick-meshtastic-device"
 				(path "/d817f34c-2aa5-4c70-878b-29719eb987fe"
 					(reference "J6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x04")
+		(at 45.72 38.1 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "af565743-79a8-4bba-8c74-2dc423c2eb61")
+		(property "Reference" "PS1"
+			(at 45.72 43.18 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "XL3608 5V Boost (wired)"
+			(at 45.72 30.48 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical"
+			(at 45.72 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 45.72 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 45.72 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "64f1ea67-f0c1-4917-af70-ce0a4c8ce54a")
+		)
+		(pin "2"
+			(uuid "bca602dc-40de-4577-9241-7aa0934b3488")
+		)
+		(pin "3"
+			(uuid "35e5da07-9f09-4dab-a24b-0e99d4c5477d")
+		)
+		(pin "4"
+			(uuid "773c3937-fab6-4113-b9ff-8ccf0dfd2c58")
+		)
+		(instances
+			(project "ikoka-stick-meshtastic-device"
+				(path "/d817f34c-2aa5-4c70-878b-29719eb987fe"
+					(reference "PS1")
 					(unit 1)
 				)
 			)
@@ -9774,8 +9899,8 @@
 		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board no)
-		(in_pos_files no)
+		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "df941ca6-9e44-449e-b4a5-14a1a7c87b42")
@@ -10525,143 +10650,6 @@
 				)
 			)
 		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x04")
-		(at 45.72 38.1 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "af565743-79a8-4bba-8c74-2dc423c2eb61")
-		(property "Reference" "PS1"
-			(at 45.72 43.18 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "XL3608 5V Boost Module"
-			(at 45.72 30.48 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Booster_Module:Booster_XL3608_24.4x13.7mm_Solder"
-			(at 45.72 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 45.72 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 45.72 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "64f1ea67-f0c1-4917-af70-ce0a4c8ce54a")
-		)
-		(pin "2"
-			(uuid "bca602dc-40de-4577-9241-7aa0934b3488")
-		)
-		(pin "3"
-			(uuid "35e5da07-9f09-4dab-a24b-0e99d4c5477d")
-		)
-		(pin "4"
-			(uuid "773c3937-fab6-4113-b9ff-8ccf0dfd2c58")
-		)
-		(instances
-			(project "ikoka-stick-meshtastic-device"
-				(path "/d817f34c-2aa5-4c70-878b-29719eb987fe"
-					(reference "PS1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(label "BOOST_IN"
-		(at 40.64 35.56 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "4bdc9326-38a2-46f5-ba01-2989039da6cb")
-	)
-	(label "GND"
-		(at 40.64 38.1 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "53529bd8-01e1-4cff-99cf-13765a57b43b")
-	)
-	(label "GND"
-		(at 40.64 40.64 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "7fe76f43-a9ee-486c-94f0-c34eea124557")
-	)
-	(label "+5V2_LORA"
-		(at 40.64 43.18 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "6ebb6151-84cf-4482-8a40-68c574ef3ea0")
-	)
-	(junction
-		(at 223.52 34.29)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3db036f2-dab8-4139-9c49-d901431152ef")
-	)
-	(junction
-		(at 223.52 59.69)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bbe8d268-ad85-4789-a04e-94252a58f83d")
 	)
 	(sheet_instances
 		(path "/"
