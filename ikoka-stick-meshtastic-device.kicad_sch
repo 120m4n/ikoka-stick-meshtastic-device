@@ -10874,14 +10874,12 @@
 				(hide yes)
 			)
 		)
-		(property "Check_prices" "https://www.snapeda.com/parts/E22-900M30S/EBYTE/view-part/?ref=eda"
+		(property "Check_prices" "https://jlcpcb.com/partdetail/54616328-E22P915M30S/C51912672"
 			(at 205.74 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "STANDARD" "Manufacturer Recommendations"
 			(at 205.74 46.99 0)
@@ -10910,23 +10908,19 @@
 				(hide yes)
 			)
 		)
-		(property "MP" "E22-900M30S"
+		(property "MP" "E22P-915M30S"
 			(at 205.74 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
-		(property "Description_1" "SX1262 868/915 MHz 1w SPI LoRa Module"
+		(property "Description_1" "SX1262 915 MHz 1W SPI LoRa Module (E22P)"
 			(at 205.74 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "Availability" "Not in stock"
 			(at 205.74 46.99 0)
@@ -10946,14 +10940,12 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C411294"
+		(property "LCSC" "C51912672"
 			(at 205.74 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(pin "1"
 			(uuid "077511a8-a0e0-4438-9067-54773193afac")

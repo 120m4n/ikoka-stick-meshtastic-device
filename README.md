@@ -48,6 +48,8 @@ The original E22 still works with JP1 bridged 2–3 (RXEN on D5).
 
 Never bridge all three pads: that shorts 3.3V to D5. JP1 sits under the XIAO, so pull the XIAO from its sockets to change it.
 
+U2 in the BOM is the [E22P-915M30S](https://www.cdebyte.com/products/E22P-915M30S) (902–928 MHz at 30 dBm), JLCPCB/LCSC part [C51912672](https://jlcpcb.com/partdetail/54616328-E22P915M30S/C51912672) (extended part). For the 868 MHz band use the E22P-868M30S. The E22 modules below also fit (set JP1 to 2–3); the E22-900M30S is LCSC C411294.
+
 - [E22-400M22S](https://www.cdebyte.com/products/E22-400M22S) (410–493 MHz at 22 dBm)
 - [E22-400M30S](https://www.cdebyte.com/products/E22-400M30S) (410–493 MHz at 30 dBm)
 - [E22-400M33S](https://www.cdebyte.com/products/E22-400M33S) (410–493 MHz at 33 dBm)
