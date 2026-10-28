@@ -33,10 +33,20 @@ Several options are available depending on the feature set you need.
 
 Version 3 uses the EBYTE E22P (e.g. E22P-915M30S) instead of the E22, ported from [tahnok's fork](https://github.com/tahnok/ikoka-stick-meshtastic-device) (commit 366648b). Same footprint, pin compatible except for 2 pins:
 
-- Pin 6 is `RXEN` on the E22 (driven by XIAO D6 / `SX126X_RXEN` in firmware). On the E22P it is `EN` and must be high to transmit or receive. It now goes to the common pad of solder jumper JP1 (under the XIAO): pads 1–2 are bridged by default and tie `EN` to 3.3V. To drive it from XIAO D6 instead, cut the 1–2 trace and bridge pads 2–3.
+- Pin 6 is `RXEN` on the E22 (driven by XIAO D5 (pin 6) / `SX126X_RXEN` in firmware). On the E22P it is `EN` and must be high to transmit or receive. It now goes to the common pad of solder jumper JP1 (under the XIAO): pads 1–2 are bridged by default and tie `EN` to 3.3V. To drive it from XIAO D5 (pin 6) instead, cut the 1–2 trace and bridge pads 2–3.
 - Pin 7 is `TXEN` on the E22 and `T/R CTRL` on the E22P (high = TX, low = RX). It stays connected to the radio's `DIO2`, which drives it correctly.
 
-The original E22 still works with JP1 bridged 2–3 (RXEN on D6).
+The original E22 still works with JP1 bridged 2–3 (RXEN on D5).
+
+##### JP1 configuration
+
+| Module | JP1 | Firmware |
+|---|---|---|
+| E22P | 1–2 (factory default) | Stock Meshtastic/MeshCore |
+| E22 | 2–3 (cut 1–2, bridge 2–3) | Stock Meshtastic/MeshCore |
+| E22P with software power-down | 2–3 | Firmware that treats D5 as an enable (held high in TX and RX) |
+
+Never bridge all three pads: that shorts 3.3V to D5. JP1 sits under the XIAO, so pull the XIAO from its sockets to change it.
 
 - [E22-400M22S](https://www.cdebyte.com/products/E22-400M22S) (410–493 MHz at 22 dBm)
 - [E22-400M30S](https://www.cdebyte.com/products/E22-400M30S) (410–493 MHz at 30 dBm)
