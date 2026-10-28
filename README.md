@@ -29,7 +29,26 @@ Several options are available depending on the feature set you need.
 - [Seeed Studio XIAO-nRF52840](https://www.seeedstudio.com/Seeed-XIAO-BLE-nRF52840-p-5201.html) - Bluetooth 5/LE
 - [Seeed Studio XIAO-ESP32-S3](https://www.seeedstudio.com/XIAO-ESP32S3-p-5627.html) - Bluetooth 5/LE and Wi-Fi 4 (2.4 GHz)
 
-#### LoRa Module
+#### LoRa Module (v3: E22P)
+
+Version 3 uses the EBYTE E22P (e.g. E22P-915M30S) instead of the E22, ported from [tahnok's fork](https://github.com/tahnok/ikoka-stick-meshtastic-device) (commit 366648b). Same footprint, pin compatible except for 2 pins:
+
+- Pin 6 is `RXEN` on the E22 (driven by XIAO D5 (pin 6) / `SX126X_RXEN` in firmware). On the E22P it is `EN` and must be high to transmit or receive. It now goes to the common pad of solder jumper JP1 (under the XIAO): pads 1–2 are bridged by default and tie `EN` to 3.3V. To drive it from XIAO D5 (pin 6) instead, cut the 1–2 trace and bridge pads 2–3.
+- Pin 7 is `TXEN` on the E22 and `T/R CTRL` on the E22P (high = TX, low = RX). It stays connected to the radio's `DIO2`, which drives it correctly.
+
+The original E22 still works with JP1 bridged 2–3 (RXEN on D5).
+
+##### JP1 configuration
+
+| Module | JP1 | Firmware |
+|---|---|---|
+| E22P | 1–2 (factory default) | Stock Meshtastic/MeshCore |
+| E22 | 2–3 (cut 1–2, bridge 2–3) | Stock Meshtastic/MeshCore |
+| E22P with software power-down | 2–3 | Firmware that treats D5 as an enable (held high in TX and RX) |
+
+Never bridge all three pads: that shorts 3.3V to D5. JP1 sits under the XIAO, so pull the XIAO from its sockets to change it.
+
+U2 in the BOM is the [E22P-915M30S](https://www.cdebyte.com/products/E22P-915M30S) (902–928 MHz at 30 dBm), JLCPCB/LCSC part [C51912672](https://jlcpcb.com/partdetail/54616328-E22P915M30S/C51912672) (extended part). For the 868 MHz band use the E22P-868M30S. The E22 modules below also fit (set JP1 to 2–3); the E22-900M30S is LCSC C411294.
 
 - [E22-400M22S](https://www.cdebyte.com/products/E22-400M22S) (410–493 MHz at 22 dBm)
 - [E22-400M30S](https://www.cdebyte.com/products/E22-400M30S) (410–493 MHz at 30 dBm)
@@ -69,6 +88,7 @@ In the interest of ease-of-assembly and keeping the XIAO module interchangeable,
 #### OLED Display (Optional)
 
 - Generic SSD1306 0.96" OLED display modules with 2.54mm pin headers [https://www.aliexpress.com/item/1005008077705181.html]((AliExpress))
+- v3 header J6 pinout is `GND, VCC (3.3V), SCL, SDA` (pin 1 to 4), marked `-`/`+` on the silkscreen, matching the common GND-first modules (ported from tahnok's fork). v1/v2 had `VCC, GND, SCL, SDA`. Check your module's pin order before soldering.
 
 ## Firmware
 
