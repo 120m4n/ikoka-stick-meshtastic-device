@@ -13,7 +13,7 @@ I hope that building these long-range Meshtastic designs inspires you to go on y
   - 410–493 MHz (433 MHz band) or 850–930 MHz (868/915/923 MHz band)
 - Bluetooth 5 LE
 - Wi-Fi 4 (2.4 GHz)
-- Lithium-ion battery with charging
+- USB 5V powered, optional LiPo battery with charging
 - 0.96" OLED display
 
 Feature set above depends on part selection.
@@ -38,11 +38,19 @@ Several options are available depending on the feature set you need.
 - [E22-900M30S](https://www.cdebyte.com/products/E22-900M30S) (850–930 MHz at 30 dBm)
 - [E22-900M33S](https://www.cdebyte.com/products/E22-900M33S) (850–930 MHz at 33 dBm)
 
-#### Lithium-ion Battery (4.2V charging termination, optional)
+#### Power (v2)
 
-- 21700 Lithium-ion battery cell (4.2V charge termination; holder: [BeilaMoo PA21700*1-SMT](https://www.beilamoo.com/sdm/1074412/4/pd-5180803/21061576-2986071/ONE_21700_Battery_Holder_with_Surface_Mount_SMT.html)/[MYOUNG BH-21700-B1BJ001](https://jlcpcb.com/partdetail/Myoung-BH_21700B1BJ001/C20606791))
+Version 2 drops the on-board 21700 battery holder. The board runs entirely from the XIAO's USB 5V (VBUS): D3 (SS34) feeds the boost input and blocks backfeed into VBUS, and the Q1 (AO3401A) battery/USB power path is kept for an optional LiPo on the PicoBlade connectors.
+
+The LoRa supply (+5V2_LORA) comes from an XL3608 boost module (24.4 × 13.7 mm) mounted flat on the back side, footprint `Booster_Module:Booster_XL3608_24.4x13.7mm_SMD`:
+
+- SMD pads only, no holes, so nothing pokes through to the front side. It sits between the XIAO and the E22, not behind the E22's RF area.
+- The only exposed copper under the module is its own 4 pads; vias are tented. Put Kapton tape or double-sided foam tape between the module and the board.
+- Pad positions are assumed (1.5 mm from each corner, VIN/VOUT on one long side and GND on the other, labelled on the silkscreen). Check them against your module with a caliper before ordering.
+
+#### Lithium-polymer Battery (4.2V charging termination, optional)
+
 - Lithium-polymer pouch battery cell (4.2V charge termination; connector: Molex PicoBlade 1x02P, pitch 1.25mm)
-- Do not use both a 21700 and LiPo battery simultaneously, they will be shorted together in parallel
 
 ##### Wiring for Battery Charging
 

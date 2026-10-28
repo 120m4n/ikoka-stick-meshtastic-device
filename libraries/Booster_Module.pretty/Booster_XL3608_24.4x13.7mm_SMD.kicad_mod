@@ -1,0 +1,190 @@
+(footprint "Booster_XL3608_24.4x13.7mm_SMD"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "XL3608 5V boost module (24.4x13.7mm) mounted flat on the back side, SMD pads only (no holes). Pad positions ASSUMED 1.5mm from corners: 1=VIN, 2=GND, 3=GND, 4=VOUT. Verify with caliper before fab.")
+	(tags "boost module XL3608 SMD back")
+	(property "Reference" "REF**"
+		(at 0 -9 0)
+		(layer "F.SilkS")
+		(uuid "59a36f0c-c239-4f5f-a728-b66b063d9abb")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Booster_XL3608_24.4x13.7mm_Solder"
+		(at 0 9 0)
+		(layer "F.Fab")
+		(uuid "e5687c1a-1864-4a2a-a3c7-41c9b33f2da4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "e0f40b9f-e6b0-442a-bea7-5950706d72d9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3cea88ea-b677-4513-843a-8be1f293603c")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -5.5 -5.35)
+		(end -4.5 -6.15)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "63ce9672-46f7-4b9a-b0ec-ffe080c78202")
+	)
+	(fp_line
+		(start -5.5 -5.35)
+		(end -4.5 -4.55)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "63217395-57ae-42f8-8faf-e5c481f9c6a9")
+	)
+	(fp_line
+		(start 5.5 -5.35)
+		(end -5.5 -5.35)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "4cde5ffa-4dc9-4d6f-b077-44c8d8bc0bc0")
+	)
+	(fp_rect
+		(start -13.42 -7.535)
+		(end 13.42 7.535)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "0bfcce84-7b52-46f8-8661-397649b089d1")
+	)
+	(fp_rect
+		(start -13.8 -7.9)
+		(end 13.8 7.9)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "3a395117-fd87-4017-b45d-17a9e44c7c0f")
+	)
+	(fp_rect
+		(start -12.2 -6.85)
+		(end 12.2 6.85)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "98a899be-b35f-4a87-8bb7-8be4500cdf51")
+	)
+	(fp_text user "VOUT"
+		(at -7.5 -5.35 0)
+		(layer "F.SilkS")
+		(uuid "965b2293-6149-4f24-9bf9-21a3835f4f7e")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(fp_text user "GND"
+		(at -7.5 5.35 0)
+		(layer "F.SilkS")
+		(uuid "463b17f4-da93-4039-89d3-0f5ae6a0b514")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(fp_text user "VIN"
+		(at 7.5 -5.35 0)
+		(layer "F.SilkS")
+		(uuid "a1e17393-300d-48bd-ba25-d7f3987e7cc0")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(fp_text user "GND"
+		(at 7.5 5.35 0)
+		(layer "F.SilkS")
+		(uuid "586641c0-4275-4d9f-b9ca-d8c2b7deaf62")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at 10.7 -5.35)
+		(size 2.5 2.5)
+		(layers "F.Cu" "F.Mask")
+		(roundrect_rratio 0.15)
+		(uuid "1a750088-b015-40df-921a-1a0ab902f30f")
+	)
+	(pad "2" smd roundrect
+		(at 10.7 5.35)
+		(size 2.5 2.5)
+		(layers "F.Cu" "F.Mask")
+		(roundrect_rratio 0.15)
+		(uuid "efa2e8df-4aa9-44d3-b798-de6a9668bdf0")
+	)
+	(pad "3" smd roundrect
+		(at -10.7 5.35)
+		(size 2.5 2.5)
+		(layers "F.Cu" "F.Mask")
+		(roundrect_rratio 0.15)
+		(uuid "2d136259-23e6-4f67-9bee-23766fb33cca")
+	)
+	(pad "4" smd roundrect
+		(at -10.7 -5.35)
+		(size 2.5 2.5)
+		(layers "F.Cu" "F.Mask")
+		(roundrect_rratio 0.15)
+		(uuid "8014c463-3795-423f-bdbf-d3279a316abd")
+	)
+	(embedded_fonts no)
+)
