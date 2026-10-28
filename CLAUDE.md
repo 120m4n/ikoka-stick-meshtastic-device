@@ -13,6 +13,7 @@ A KiCad hardware project (no firmware, no build/test commands): a Meshtastic LoR
 - `3dmodels/` holds STEP models referenced by footprints.
 - `jlcpcb/` holds `rotations.csv` (per-part rotation corrections for JLCPCB PCBA pick-and-place) and `project.db` (JLCPCB KiCad plugin part database). Generated output (`jlcpcb/gerber`, `jlcpcb/production_files`) and exported BOM/netlist files (`*.csv`, `*.xml`, `*.net`) are gitignored. `rotations.csv` is the exception that is tracked.
 - Part orientation changes for assembly (e.g. "Rotate L1 to be upright on JLCPCB PCBA PNP") are handled via `rotations.csv`, not by rotating the footprint.
+- `rotations.csv` is only read by the Bouni JLCPCB tools plugin. Production files are generated with the Fabrication Toolkit plugin (bennymeg, output in `production/`), which ignores it and reads a hidden `FT Rotation Offset` field on the symbol/footprint instead (plus its own global `transformations.csv`). J2, J3 and J6 (SMD pin sockets) carry `FT Rotation Offset = 90`. Keep both in sync when adding a correction.
 
 ## Working with the files
 
