@@ -5662,16 +5662,6 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 113.03) (xy 58.42 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "31486f71-704d-4f6c-8e44-3fb34d696041")
-	)
-	(wire
-		(pts
 			(xy 69.85 167.64) (xy 69.85 168.91)
 		)
 		(stroke
@@ -5912,16 +5902,6 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 109.22) (xy 58.42 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6dbd6384-e480-4128-8a56-c6886463e760")
-	)
-	(wire
-		(pts
 			(xy 121.92 153.67) (xy 121.92 157.48)
 		)
 		(stroke
@@ -6019,16 +5999,6 @@
 			(type default)
 		)
 		(uuid "82a73562-193d-4f98-a46b-cefd3db4b807")
-	)
-	(wire
-		(pts
-			(xy 58.42 113.03) (xy 58.42 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "82ec8145-a757-4c60-af9e-e693d5eb8c77")
 	)
 	(wire
 		(pts
@@ -6209,16 +6179,6 @@
 			(type default)
 		)
 		(uuid "a7f69499-b1ba-49eb-ae77-ef096edb6ad2")
-	)
-	(wire
-		(pts
-			(xy 59.69 110.49) (xy 58.42 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a8dc402e-e3e3-49d9-adb6-7d4a4b0b167a")
 	)
 	(wire
 		(pts
@@ -8555,84 +8515,6 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 58.42 119.38 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "64fa8546-6ac4-475c-9acc-8ccfd84e2c1a")
-		(property "Reference" "#PWR015"
-			(at 58.42 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 58.42 124.46 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 58.42 119.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 58.42 119.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 58.42 119.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "92546104-b8ed-4291-aa19-5435e831c78c")
-		)
-		(instances
-			(project "ikoka-stick-meshtastic-device"
-				(path "/d817f34c-2aa5-4c70-878b-29719eb987fe"
-					(reference "#PWR015")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 228.6 63.5 0)
 		(unit 1)
 		(body_style 1)
@@ -8971,84 +8853,6 @@
 			(project "ikoka-stick-meshtastic-device"
 				(path "/d817f34c-2aa5-4c70-878b-29719eb987fe"
 					(reference "#FLG06")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 58.42 109.22 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "73c1cc99-76fe-4117-9a61-b1f8c1ebd1b5")
-		(property "Reference" "#PWR014"
-			(at 58.42 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 58.42 104.14 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 58.42 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 58.42 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 58.42 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "dd814ac3-9180-4139-b992-fd7a81325893")
-		)
-		(instances
-			(project "ikoka-stick-meshtastic-device"
-				(path "/d817f34c-2aa5-4c70-878b-29719eb987fe"
-					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -11329,6 +11133,26 @@
 			(justify left bottom)
 		)
 		(uuid "e9a9fc87-4974-4364-a8ba-4aece901beb5")
+	)
+	(label "GND"
+		(at 59.69 110.49 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f129d16c-b0d5-4e62-88fb-fd3d836ac86b")
+	)
+	(label "+3V3"
+		(at 59.69 113.03 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "293f399c-42b4-4e35-92b1-4015b358f5cc")
 	)
 	(sheet_instances
 		(path "/"

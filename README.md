@@ -86,6 +86,7 @@ In the interest of ease-of-assembly and keeping the XIAO module interchangeable,
 #### OLED Display (Optional)
 
 - Generic SSD1306 0.96" OLED display modules with 2.54mm pin headers [https://www.aliexpress.com/item/1005008077705181.html]((AliExpress))
+- v3 header J6 pinout is `GND, VCC (3.3V), SCL, SDA` (pin 1 to 4), marked `-`/`+` on the silkscreen, matching the common GND-first modules (ported from tahnok's fork). v1/v2 had `VCC, GND, SCL, SDA`. Check your module's pin order before soldering.
 
 ## Firmware
 
