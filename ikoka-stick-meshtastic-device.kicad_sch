@@ -4552,12 +4552,6 @@
 		(uuid "430b1299-948c-4094-941d-55ec81988658")
 	)
 	(junction
-		(at 210.82 109.22)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4536f5e6-70b4-40d1-92c5-83167bdc6b1e")
-	)
-	(junction
 		(at 48.26 69.85)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4574,12 +4568,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a578461b-8e90-4c59-9ae3-5cbad180ac61")
-	)
-	(junction
-		(at 210.82 119.38)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a9a1ccd0-a052-45a7-96fb-651502b1062d")
 	)
 	(junction
 		(at 74.93 25.4)
@@ -5051,26 +5039,6 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 109.22) (xy 210.82 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5cde93c0-68d1-4d35-abd4-252302ac04a5")
-	)
-	(wire
-		(pts
-			(xy 210.82 120.65) (xy 210.82 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5e8566ff-be9d-473d-b014-93b9d9ca22ac")
-	)
-	(wire
-		(pts
 			(xy 69.85 168.91) (xy 71.12 168.91)
 		)
 		(stroke
@@ -5298,16 +5266,6 @@
 			(type default)
 		)
 		(uuid "86fae2a5-aebe-4a83-9aca-9c7876b56865")
-	)
-	(wire
-		(pts
-			(xy 210.82 118.11) (xy 210.82 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "89fa64a2-aff2-47cc-aa45-efe0af02cb9d")
 	)
 	(wire
 		(pts
@@ -8348,99 +8306,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Battery_Cell")
-		(at 210.82 115.57 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "6ae87a1c-26cb-4b3c-b026-cb4779c406bc")
-		(property "Reference" "BT1"
-			(at 207.01 112.4584 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Battery_Cell"
-			(at 207.01 114.9984 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Battery 21700:BatteryHolder_MYOUNG_BH-21700-B1BJ001_1x21700"
-			(at 210.82 114.046 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 210.82 114.046 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Single-cell battery"
-			(at 210.82 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C20606791"
-			(at 207.01 112.4584 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "967b32f1-0543-4acb-964b-6e2563d91c85")
-		)
-		(pin "2"
-			(uuid "cef1d321-6573-4190-98fc-d784a4e611c2")
-		)
-		(instances
-			(project "ikoka-stick-meshtastic-device"
-				(path "/d817f34c-2aa5-4c70-878b-29719eb987fe"
-					(reference "BT1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector_Generic_MountingPin:Conn_01x02_MountingPin")
 		(at 246.38 113.03 0)
 		(unit 1)
@@ -9176,84 +9041,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 210.82 120.65 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "aae5c15e-38c3-4433-afed-d09c38d449eb")
-		(property "Reference" "#PWR010"
-			(at 210.82 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 210.82 125.73 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 210.82 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 210.82 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 210.82 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "3a4a3eab-79c0-4d3b-b281-d45557e1f84d")
-		)
-		(instances
-			(project "ikoka-stick-meshtastic-device"
-				(path "/d817f34c-2aa5-4c70-878b-29719eb987fe"
-					(reference "#PWR010")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Seeed_Studio_XIAO_Series:XIAO-ESP32-S3-DIP")
 		(at 73.66 148.59 0)
 		(unit 1)
@@ -9578,7 +9365,7 @@
 				)
 			)
 		)
-		(property "Value" "XL3608 5V Boost (wired)"
+		(property "Value" "XL3608 5V Boost module (back)"
 			(at 45.72 30.48 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9588,7 +9375,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical"
+		(property "Footprint" "Booster_Module:Booster_XL3608_24.4x13.7mm_SMD"
 			(at 45.72 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -10650,6 +10437,28 @@
 				)
 			)
 		)
+	)
+	(junction
+		(at 223.52 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0d542f47-b012-450e-aceb-668ac948180b")
+	)
+	(junction
+		(at 223.52 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6baad9a0-24d5-46dd-a9fd-a688e25be2ec")
+	)
+	(label "GND"
+		(at 210.82 119.38 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8c11a67f-9730-446b-b4ea-35f679097a72")
 	)
 	(sheet_instances
 		(path "/"
